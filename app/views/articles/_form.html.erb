@@ -15,6 +15,15 @@
     <% end %>
 
     <p>
+      <%= form.label :author_name %><br>
+      <%= form.text_field :author_name %>
+    </p>
+    <p>
+      <%= form.label :state %><br>
+      <%= select(:article, :state, [['Draft', 'Draft'], ['Published', 'Published']]) %>
+
+    </p>
+    <p>
       <%= form.label :title %><br>
       <%= form.text_field :title %>
     </p>
