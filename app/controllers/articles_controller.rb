@@ -3,7 +3,11 @@ class ArticlesController < ApplicationController
   http_basic_authenticate_with name: "ann", password: "secret", except: [:index, :show]
 
     def index
-      @articles = Article.all
+      #@articles = Article.all
+      @a = Article.ransack(params[:q])
+      @articles = @a.result(distinct: true)
+
+      #@articles = Article.all
     end
 
     def show
