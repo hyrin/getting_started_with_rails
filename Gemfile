@@ -55,8 +55,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pg', '~> 0.18'
 
 gem 'rails-i18n', '~> 5.1' # For 5.0.x, 5.1.x and 5.2.x
-
 gem 'validates'
 gem 'slim-rails'
 gem 'slim'
 gem 'ransack'
+gem 'kaminari'

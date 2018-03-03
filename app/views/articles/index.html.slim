@@ -11,7 +11,7 @@ br
   = f.label :title_start
   = f.search_field :title_start
   = f.label :state_cont
-  = f.search_field :state_cont
+  = f.select(:state_cont, [['All', 'Draft || Published'], ['Draft', 'Draft'], ['Published', 'Published']])
   br
   br
   = f.submit
@@ -45,3 +45,5 @@ table
         = link_to 'Edit', edit_article_path(article)
       td
         = link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }
+
+= paginate @articles

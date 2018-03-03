@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
     def index
       #@articles = Article.all
       @a = Article.ransack(params[:q])
-      @articles = @a.result(distinct: true)
+      @articles = @a.result(distinct: true).page params[:page]
 
       #@articles = Article.all
     end
