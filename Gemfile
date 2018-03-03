@@ -60,3 +60,6 @@ gem 'slim-rails'
 gem 'slim'
 gem 'ransack'
 gem 'kaminari'
+gem 'bootstrap', '~> 4.0.0'
+gem 'jquery-rails'
+
