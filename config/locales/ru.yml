@@ -30,12 +30,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-  hello_rails: "Hello, Rails!"
-  my_blog: "My Blog"
-  listing_articles: "Listing Articles"
-  new_article: "New article"
-  author_name: "Author name"
-  state: "State"
-  title: "Title"
-  text: "Text"
+  hello: "Привет мир!"
+  hello_rails: "Привет, Rails!"
+  my_blog: "Мой блог"
+  my_blog: "Мой блог"
+  listing_articles: "Список статей"
+  new_article: "Новая статья"
