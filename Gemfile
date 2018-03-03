@@ -62,4 +62,6 @@ gem 'ransack'
 gem 'kaminari'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'simple_form'
 
+gem 'i18n-debug', group: :development

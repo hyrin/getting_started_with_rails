@@ -1,28 +1,19 @@
-= form_with model: @article, local: true do |form|
+
+= simple_form_for @article do |f|
   - if @article.errors.any?
     #error_explanation
       h2
         = pluralize(@article.errors.count, "error")
-        |  prohibited this article from being saved: 
+        |  prohibited this article from being saved:
       ul
         - @article.errors.full_messages.each do |msg|
           li
             = msg
-  p
-    = form.label :author_name
-    br
-    = form.text_field :author_name
-  p
-    = form.label :state
-    br
-    = select(:article, :state, [['Draft', 'Draft'], ['Published', 'Published']])
-  p
-    = form.label :title
-    br
-    = form.text_field :title
-  p
-    = form.label :text
-    br
-    = form.text_area :text
-  p
-    = form.submit
+
+  .form-group
+    = f.input :author_name
+    = f.input :state, collection: [['Draft', 'Draft'], ['Published', 'Published']]
+    = f.input :title
+    = f.text_area :text
+
+  = f.button :submit, class: 'btn btn-primary'
