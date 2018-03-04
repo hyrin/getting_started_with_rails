@@ -1,5 +1,5 @@
 require 'test_helper'
-
+=begin
 class CommentsControllerTest < ActionDispatch::IntegrationTest
   test "should create comment" do
     assert_difference('Comment.count') do
@@ -25,3 +25,4 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to article_url
   end
 end
+=end

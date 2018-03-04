@@ -1,0 +1,18 @@
+= render '/header'
+.container
+  h1
+    | Category
+  p
+    strong
+      | Name:
+    = @category.name
+  p
+    strong
+      | Slug:
+    = @category.slug
+  br
+  = link_to 'Edit', edit_article_category_path(@category)
+  |  |
+  = link_to 'Back', article_categories_path
+
+= render '/footer'
