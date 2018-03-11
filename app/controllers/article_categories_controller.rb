@@ -5,11 +5,12 @@ class ArticleCategoriesController < ApplicationController
   end
 
   def new
+    raise ‘yyy’
     @category = Article::Category.new
   end
 
   def create
-
+    raise ‘yyy’
     @category = Article::Category.new(category_params)
     #raise ‘yyy’
     if @category.save
@@ -26,7 +27,14 @@ class ArticleCategoriesController < ApplicationController
     @category = Article::Category.find(params[:id])
   end
 
+  def edit
+    raise ‘yyy’
+    @category = Article::Category.find(params[:id])
+
+  end
+
   def update
+    raise ‘yyy’
     @category = Article::Category.find(params[:id])
 
     if @category.update(category_params)

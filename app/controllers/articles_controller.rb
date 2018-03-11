@@ -20,11 +20,13 @@ class ArticlesController < ApplicationController
 
     def edit
       @article = Article.find(params[:id])
+      binding.irb
     end
 
     def create
       @article = Article.new(article_params)
-
+      raise ‘yyy’
+      binding.irb
       if @article.save
         redirect_to @article
       else
@@ -34,7 +36,7 @@ class ArticlesController < ApplicationController
 
     def update
       @article = Article.find(params[:id])
-
+      raise ‘yyy’
       if @article.update(article_params)
         redirect_to @article
       else
@@ -45,7 +47,7 @@ class ArticlesController < ApplicationController
     def destroy
       @article = Article.find(params[:id])
       @article.destroy
-
+      raise ‘yyy’
       redirect_to articles_path
     end
 

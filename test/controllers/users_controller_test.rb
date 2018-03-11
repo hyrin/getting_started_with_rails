@@ -30,6 +30,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
 
   test "should get edit" do
     get edit_user_url(@user)
+    binding.irb
     assert_response :success
   end
 
@@ -42,7 +43,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_difference('User.count', -1) do
       delete user_url(@user)
     end
-
+    binding.irb
     assert_redirected_to users_url
   end
 end

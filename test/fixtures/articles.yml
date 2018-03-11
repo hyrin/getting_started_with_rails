@@ -1,9 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  author_name: ann
   title: MyString
   text: MyText
+  state: Published
+  article_categories_id: one
 
 two:
+  author_name: ann
   title: MyString
   text: MyText
+  state: Published
+  article_categories_id: one
